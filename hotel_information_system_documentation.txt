@@ -1,0 +1,29 @@
+
+System Name: 
+
+	Hotel Information System
+
+Discription:
+
+	This System was built to let hotel attendants manage and list hotel customers conveniently. 
+
+Features:
+
+	> Add customers who check-in in a hotel,
+	> Displays those customers with their some basic info and the number of room they're checked-in,
+	> Check-out customers easily,
+	> Records the payments of customers and display those records according to date,
+	> Displays the total income daily,
+	> Let hotel attendants search particular customer who checked-in in their hotel,
+	> Delete customers if needed,
+	> Enables hotel attendant to sort the customer records in a specific order,
+	> Enables hotel attendant to add/save important hotel-related notes if ever there is,
+	> Update and Delete those notes,
+
+	(Hotel administrator)
+
+	> Can add attendants,
+	> Update attendant's information,
+	> Delete specific attendant,
+	> Administrators can add, update or delete rooms' information if urgent,
+	> Hotel administrators can also add notes, update, and delete it if this is already futile. 

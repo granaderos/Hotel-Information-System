@@ -1,8 +1,13 @@
 $(document).ready(function(){
 	$("#navigator_tabs_div").tabs();
 	$("#calendar_div").datepicker();
-    $("#date_of_check_out").datepicker("option", "formatDate", 'yy-mm-dd');
-	
+    $("#date_of_check_out").datepicker({
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        minDate: '+0d'
+    });
+    $("#date_of_check_out").datepicker("option", "dateFormat", 'yy-mm-dd');
+
 	$("#home_a").addClass("active_a");
 	
 	$(".warning").hide();
@@ -14,6 +19,7 @@ $(document).ready(function(){
 	$("#check_out_hide_action_button").hide();
 	$("#th_delete_payment_record_button_container").hide();
 	$("#invalid_input_field_value_warning").hide();
+    $("#read_only_date_of_check_out_tr").hide();
 	
 	//hidden divs for dialogs //
 	
@@ -79,12 +85,10 @@ $(document).ready(function(){
 		
 		$("#pay_later_button").click(function() {
 			$("#pay_now_button").show();
-			$("#payment_table").fadeOut(4000);
+			$("#payment_table").slideUp();
 		});
 	});
-	
-	
-	
+
 	$("#calendar_a").click(function() {
 		$("#calendar_div").dialog({
 			title: " CALENDAR ",

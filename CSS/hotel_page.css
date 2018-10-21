@@ -1,0 +1,498 @@
+body {
+    background: black;
+    padding: 20px;
+    margin: 30px;
+    border: 1px dashed brown;
+    border-radius: 30px;
+    -moz-box-shadow: 12px 10px 5px 1px #000;
+    -webkit-box-shadow: 12px 10px 5px 1px #000;
+    box-shadow: 12px 10px 5px 1px #000;
+}
+
+#main_container_div {
+    margin: 0 auto;
+}
+
+h1{
+	color: brown; 
+	text-decoration: underLine;
+	margin: 0 auto;
+}
+
+#attendant_span {
+	color: white;
+	float: right;
+	text-decoration: blink; 
+}
+
+input[type = "text"], input[type = "password"], input[type = "number"], textarea {
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+    margin: 0px 7px 0px 7px;
+}
+
+input[type = "text"]:focus, input[type = "password"]:focus, input[type = "number"]:focus, textarea:focus {
+    box-shadow: 0px 1px 5px burlywood;
+}
+
+#rooms_div, #current_record_div, #check_out_record_div, #payment_record_div, #notes_div {
+    background: -moz-linear-gradient(top, #ffb 1%, #B84D4D 90%);
+}
+
+#navigator_ul {
+	background: #ffb;
+	font-weight: bold !important;
+	font-family: arial;
+	font-size: 14px;
+    border: none;
+    border-collapse: collapse;
+}
+
+
+/*	~~~~~~~~~~~~ HOME DIV ELEMENTS ~~~~~~~~~~~~~*/
+
+#home_div {
+    font-size: 15px;
+    background: -moz-linear-gradient(top, #ffb 1%, #B84D4D 90%);
+}
+
+#first_page_float_right_div {
+	float: right;
+	text-align: center; 
+}
+
+#home_menu_ul {
+	height: 20px;
+	background: #ccc;
+	color: brown;
+}
+
+#home_menu_ul li {
+	color: brown;
+	position: relative;
+	float: left;
+	list-style: none;
+	font-size: 13px;
+	padding: 0;
+	margin-top: 1px;	
+}
+
+#home_menu_ul li ul {
+	display: none;
+}
+
+#home_menu_ul li:hover ul {
+	list-style-type: none;
+	display: block;
+	position: absolute;
+	background: #ffb;
+	margin-left: 0;  
+}
+
+#home_menu_ul li a {
+	display: block;
+	text-decoration: none;
+	color: brown;
+	padding: 15px;
+	background: inherit;
+	line-height: 2px;
+	white-space: nowrap;
+	float: none;
+}
+
+#home_menu_ul li a:hover {
+	color: black;
+	background: #ffb; 
+	cursor: pointer;
+}
+
+#home_menu_ul li:hover li {
+	float: none;
+}
+
+#home_menu_ul li:hover a {
+	background: #ffb;
+	color: black;
+}
+
+#home_menu_ul li ul a:hover li {
+	background: black;
+}
+
+#home_menu_ul li:hover li a:hover {
+	background: -webkit-linear-gradient(left, white 10%, silver 90%, #ccc 12%);
+	background: -moz-linear-gradient(left, white 10%, silver 90%, #ccc 12%);
+	background: linear-gradient(left, white 10%, silver 90%, #ccc 12%);
+}
+
+#hotel_images_div, #hotel_images_div img {
+	width: 430px;
+	height: 300px;
+	background: #ccc; 
+	padding: 5px;
+}
+
+#about_hotel_p {
+	text-indent: 3em;
+	padding: 10px;
+	text-align: center;
+	font-family: purisa;
+	font-weight: bold;
+	font-size: 15px;
+	margin-right: 500px;
+}
+
+
+/* ~~~~~~~~~~~ ROOMS DIV ELEMENTS ~~~~~~~~~~~~*/
+
+#room_legend_div {
+	width: 500px;
+	margin: 0 auto;
+}
+
+#room_legend_div table {
+	width: 500px;
+	margin: 0 auto;
+}
+
+#room_legend_table tr th {
+	font-size: 10px;
+}
+
+#room_legend_table tr td {
+	border-radius: 10px;
+	height: 20px;
+	width: 200px;
+}
+
+#room_legend_caption {
+	font-family: purisa, arial;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: underLine;
+	-moz-text-shadow: 1px 10px 2px 10px silver;
+	-webkit-text-shadow: 1px 10px 2px 10px silver;
+}
+
+#available_td {
+	background: red;
+    width: 100px;
+}
+
+#occupied_td {
+	background: yellow;
+}
+
+#reserved_td {
+	background: green;
+}
+
+#out_of_order_td {
+	background: blue;
+}
+
+#reserve_to_span {
+	text-decoration: underLine;
+	font-style: italic;
+	font-size: 20px;
+	color: silver;
+}
+
+#room_price_div {
+    float: right;
+	font-size: 10px;
+	padding: 8px;
+    width: 145px;
+    box-shadow: 0px 1px 5px #000;
+	line-height: 10px;
+	
+}
+#room_price_div dl {
+	color: brown;
+}
+
+#room_price_div dd {
+	color: #333333;
+    font-weight: bold;
+}
+
+#rooms_data_div {
+    float: left;
+	width: 650px;
+	margin: 10px;
+}
+
+#reset_form {
+	float: right;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.for_available_rooms_div, .for_occupied_rooms_div, .for_reserved_rooms_div, .for_out_of_order_rooms_div {
+	width: 158px;
+    font-size: 12px !important;
+	height: 130px;
+	float: right;
+	float: left;
+	font-weight: bold;
+	border: 1px solid gray;
+}
+
+.for_available_rooms_div {
+	background: red;
+	color: white;
+	cursor: pointer;
+}
+
+.for_occupied_rooms_div {
+	background: yellow;
+}
+
+.for_occupied_rooms_div table tr:nth-child(4) {
+    font-weight: normal;
+    font-size: 10px;
+}
+
+.for_reserved_rooms_div {
+	background: green;
+	cursor: pointer;
+}
+
+.for_out_of_order_rooms_div {
+	background: blue;
+}
+
+.room_number {
+	font-size: 30px;
+}
+
+#rooms_div {
+	padding: 30px;
+    background: -moz-linear-gradient(top, #ffb 1%, #B84D4D 90%);
+    overflow: auto;
+}
+/* ^^^^^^^^^^^^^^^^^ ROOMS DIV ELEMENTS END! ^^^^^^^^^^^^^^^^^^ */
+
+/* ~~~~~~~~~~~ CURRENT RECORD DIV ELEMENTS ~~~~~~~~~~~~~~~~~*/
+.td_check_out {
+	border-radius: 50px;
+	cursor: pointer;
+	font-size: 15px;
+	background: -moz-radial-gradient(top, gray 10%, #ccc 90%);
+	background: -webkit-radial-gradient(top, gray 10%, #ccc 90%);
+	background: radial-gradient(top, gray 10%, #ccc 90%);
+	font-weight: bold;
+	color: brown;
+}
+/* ^^^^^^^^^^^^^ CURRENT RECORD DIV ELEMENTS END! ^^^^^^^^^^^^^^^^^ */
+
+/* ~~~~~~~~~~~ CHECKED-OUT RECORD DIV ELEMENTS ~~~~~~~~~~~~ */
+
+#mark_unmark_option_span {
+	font-size: 13px;
+}
+
+#mark_unmark_option_span span:hover {
+	text-decoration: underLine;
+	background: #ccc;
+	cursor: pointer;
+	border-radius: 5px;
+	color: white;
+}
+
+.checkbox_td {
+	visibility: hidden;
+}
+/* ^^^^^^^^^^ CHECKED-OUT RECORD DIV ELEMENTS END! ^^^^^^^^^^^  */
+
+/* ~~~~~~~~~~~~~~ PAYMENT RECORD DIV ELEMENTS ~~~~~~~~~~~~~~~~ */
+#payment_record_select_form {
+	background: #aaa;
+	color: brown;
+	font-weight: bold;
+	padding: 6px; 
+	width: 300px;
+	border: 4px double white;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+#current_date_viewed_payment_record_span {
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	width: 20px;
+}
+
+#payment_record_previous_th {
+	text-align: left;
+}
+
+#payment_record_next_th {
+	text-align: right;
+}
+
+#previous_next_tr button {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+#previous_next_tr button:active {
+	border: 1px dotted gray;
+}
+
+#payment_record_total_p {
+	text-indent: 45em;
+}
+
+#payment_record_daily_total {
+	font-size: 25px;
+	font-weight: bold;
+}
+/* ^^^^^^^^^^^^^^^ PAYMENT RECORD DIV ELEMENTS END! ^^^^^^^^^^^ */
+
+/* ~~~~~~~~~~~~~ NOTES DIV ELEMENTS ~~~~~~~~~~~~~~~~~~~~*/
+
+#add_notes_div {
+	width: 400px;
+	margin: 0 auto;
+}
+
+#all_notes_div {
+	width: 700px;
+	margin: 0 auto;
+}
+
+#note_about {
+	width: 300px;
+	font-size: 15px;
+}
+
+#note_description {
+	resize: none;
+	width: 300px;
+	height: 100px;
+	font-size: 15px;
+}
+
+.new_added_notes {
+	background: -moz-linear-gradient(top, white 2%, silver 98%);
+	background: -webkit-linear-gradient(top, white 2%, silver 98%);
+	background: linear-gradient(top, white 2%, silver 98%);
+	font-size: 18px;
+	padding: 5px;
+}
+
+.note_description_p {
+	margin-left: 2em;
+	margin-right: 2em;
+	font-family: purisa, sans-serif, arial;
+	text-align: justify;
+	font-size: 15px;
+}
+
+.note_about_span {
+	text-decoration: underLine;
+	color: brown;
+}
+
+.note_posted_span {
+	color: gray;
+	font-size: 15px;
+	font-style: italic;
+	margin-left: 400px;
+}
+
+.new_added_notes button {
+	float: right;
+	border: none;
+	background: transparent;
+}
+
+.new_added_notes img:active {
+	width: 20px;
+	border: 1px dotted brown;
+	cursor: pointer;
+}
+
+#close_note:active {
+	width: 17px;
+	cursor: pointer;
+}
+/*^^^^^^^^^^^^^^^^^^ NOTES DIV ELEMENTS END! ^^^^^^^^^^^^^^*/
+
+/* ~~~~~~~~~~~~~~~~~~~~~~ GLOBAL CLASSES ~~~~~~~~~~~~~~ */
+.attendant_button {
+	height: 30px;
+	background: -webkit-linear-gradient(top, gray 10%, silver 20%, #ccc 30%, white 40%);
+	background: -moz-linear-gradient(top, gray 10%, silver 20%, #ccc 30%, white 90%);
+	background: linear-gradient(top, gray 10%, silver 20%, #ccc 30%, white 40%);
+	border-radius: 50px;
+	color: black;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.warning {
+	font-size: 11px;
+	color: red;
+	text-align: center;
+}
+
+.peso_field {
+	height: 20px;
+	width: 50px;
+}
+
+.sort_record_p {
+	font-size: 15px;
+}
+
+.search_field {
+	text-align: center;
+	color: black;
+}
+
+.active_a {
+	background: #ffb;
+	border: none;
+}
+/* ^^^^^^^^^^^^^^^^^^^^^ GLOBAL CLASSES ENDS! ^^^^^^^^^^^^^^^ */
+
+/* ~~~~~~~~~~~~~~ TABLE ELEMENTS ~~~~~~~~~~~~~~~ */
+#current_record_table, #check_out_record_table, #payment_record_table, #previous_next_table {
+	width: 850px;
+	margin: 0 auto;
+	font-size: 15px;
+	text-align: center;
+}
+
+#current_record_table tr:hover, #check_out_record_table tr:hover, #payment_record_table tr:hover {
+	background: -webkit-linear-gradient(right, #ccc 10%, white 100%);
+	background: -moz-linear-gradient(right, #ccc 10%, white 100%);
+	background: linear-gradient(right, #ccc 10%, white 100%);
+	cursor: default;
+}
+
+#log_out_a {
+	float: right;
+	text-decoration: none;
+}
+
+#navigator_ul a:active {
+	background: -moz-linear-gradient(left, black 0%, white 100%);
+	background: -webkit-linear-gradient(left, black 0%, white 100%);
+	background: linear-gradient(left, black 0%, white 100%);
+}
+/* ^^^^^^^^^^^^^^^^^^^^ TABLE ELEMENTS END! ^^^^^^^^^^ */
+
+/* ~~~~~~~~~~~~ DIALOG ELEMENTS ~~~~~~~~~~~~~ */
+#check_in_div_content, #delete_note_confirmation, #amount_change_div, #reserve_room_div, #option_div, #check_out_confirmation, #delete_checked_out_record_confirmation, #calendar_div, #calculator_div { 
+	font-size: 15px;
+	background: silver;
+	padding: 10px;
+}
+/* ~~~~~~~~~~~ DIALOG ELEMENTS END! ~~~~~~~~~~~ */

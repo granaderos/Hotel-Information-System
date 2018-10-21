@@ -1,0 +1,22 @@
+<html>
+<head>
+<script src="jquery-1.8.2.min.js"></script>
+<script src="js/homepage.js"></script>
+</head>
+<body>
+        <table id ="words" border="1">
+                <tr>
+                <td>ID</td>
+                <td>WORD</td>
+                <td>DEFINITION</td>
+                </tr>
+                Words:
+                <input type ="text" name="word"> </input>
+                 Definition:
+                 <input type ="text" name="difinition"> </input>
+             <input type="button" value="ADD" id="btn_add"/> 
+        </table>
+     
+</body>
+
+</html>
